@@ -44,23 +44,14 @@ sc.pl.violin(adata, ["n_genes_by_counts","pct_counts_mt"], groupby="leiden")
 5) COMMON PLOT ARGUMENTS (sc.pl.*)
 
 color → gene name (adata.var_names) or metadata (adata.obs)
-
 size → point size
-
 ncols → number of panels per row if color is a list
-
 title → custom title(s)
-
 palette → list of colors for categorical variables
-
 legend_loc → "on data" | "right margin" | "none"
-
 layer → choose data layer (e.g., "raw")
-
 use_raw → True/False (use adata.raw for gene expression)
-
 show → True/False (display now or return figure)
-
 save → filename suffix to auto-save plot
 
 6) TYPICAL WORKFLOW
@@ -100,9 +91,6 @@ Also: pin versions (scanpy, umap-learn, leidenalg, igraph, sklearn, numpy, scipy
 QUICK VOCAB
 
 function → sc.tl.umap(...)
-
 argument (keyword) → color="leiden"
-
 object → adata (AnnData dataset)
-
 method → adata.write(...)
